@@ -1,0 +1,21 @@
+Build Wcat Command =? CAT command in linux clone
+
+it is used to display or make a copy of one or more files in the terminal.
+
+General Syntax
+node wcat.js [options][Filepath]
+option to remove big line break (-s)
+option to add line number to non empty lines (-b)
+option to add line number to all line (-n)
+
+commands :
+1- node wcat.js filepath=>displays content of that file on terminal
+2- node wcat.js filepath1,filepath2,.... =>display content of all the files( concatenated/append form) on terminal
+3- node wcat.js -s filepath   =>convert big line breaks into single line breaks
+4-node wcat.js -n filepath => give numbering to all the lines
+5-node wcat.js -b filepath  => give numbering to all the non empty lines
+
+Edge Cases:
+1- if file entered is not found then it gives file does  not exist error.
+2- -n and -b are 2 options which arfe mutually exclusive so if user types both commands together only the first command will work.
+
